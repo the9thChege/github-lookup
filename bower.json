@@ -1,0 +1,22 @@
+{
+  "name": "github-lookup",
+  "description": "A web application that searches for github users",
+  "main": "index.js",
+  "authors": [
+    "Chege Kariuki"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.18.1"
+  }
+}
