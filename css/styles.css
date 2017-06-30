@@ -1,0 +1,40 @@
+body{
+  background: linear-gradient(-80deg, #441402, #090b4e, #000000);
+}
+
+.loaded{
+  color: #3abcc4;
+}
+
+#profile-results{
+  color: #93e786;
+}
+
+#repo-results{
+  color: #dee051;
+}
+
+ul{
+  color: cyan;
+}
+
+#name{
+  color: red;
+}
+
+#creation{
+  color: #06783b;
+}
+
+#descriptive{
+  color: white;
+}
+
+#linker{
+  color: #d9ed32;
+  font-style: italic;
+}
+
+#linker:hover{
+  color: #90e75d;
+}

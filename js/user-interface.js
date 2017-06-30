@@ -1,15 +1,14 @@
 var User = require('./../js/user.js').userModule;
 
-var displayUserData = function(name, location, email, htmlUrl) {
-  $('#profile-results').append('<div class="col-sm-4">Name: ' + name + '</div><div class="col-sm-4">Location: ' + location + '</div><div class="col-sm-4">Email: ' + email + '</div><br>' + htmlUrl + '<hr>');
-  $('#profile-results').append('<div class="col-sm-4">' + name + '</div><div class="col-sm-4">' + location + '</div><div class="col-sm-4">' + email + '</div><br>' + htmlUrl + '<hr>');
+var displayUserData = function(name, location, email, htmlUrl, avatar_url) {
+  var img = document.createElement("img");
+  img.src = avatar_url;
+  $('#profile-results').append('<div class="col-sm-2">Name: ' + name + '</div><div class="col-sm-2">Location: ' + location + '</div><div class="col-sm-3">Email: ' + email + ': ' + htmlUrl + '</div>');
+  $('#profile-results').append(img);
 };
-//<<<<<<< HEAD
-//=======
-//>>>>>>> 880b25a77fe254ea233b284d8cca71018b986987;
 
 var displayRepos = function(name, language, created, description, url) {
-  $('#repo-results').append('<li><span id="name">' + name + ' | ' + language + '</span><br> Created ' + created + '<br>' + description + '<br>' + url + '</li>');
+  $('#repo-results').append('<hr><ul><span id="name">' + name + ' | ' + language + '</span><br><span id="creation"> Created: ' + created + '</span><br> Description: <span id="descriptive">' + description + '</span><br><span id="linker">' + url + '</span></ul><hr>');
 };
 
 var userFail = function(message) {
